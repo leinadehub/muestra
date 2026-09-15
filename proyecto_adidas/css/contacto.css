@@ -1,0 +1,156 @@
+.perfil-seccion {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: calc(100vh - 250px);
+}
+
+.perfil-contenedor {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    background-color: #ffffff;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+.perfil-usuario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-right: 1px solid #eeeeee;
+    padding-right: 40px;
+}
+
+.avatar-contenedor {
+    width: 100px;
+    height: 100px;
+    background-color: #000000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.avatar-inicial {
+    color: #ffffff;
+    font-family: 'Barlow', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.perfil-usuario h2 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+}
+
+.correo-usuario {
+    font-family: 'Inter', sans-serif;
+    color: #666666;
+    font-size: 0.9rem;
+    margin: 0 0 20px 0;
+}
+
+.badge-miembro {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 6px 16px;
+    letter-spacing: 0.5px;
+}
+
+.perfil-detalles h3 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 5px;
+}
+
+.perfil-detalles .titulo-historial {
+    margin-top: 40px;
+}
+
+.dato-grupo {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dato-etiqueta {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    color: #767676;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.dato-valor {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #111111;
+}
+
+.pedido-tarjeta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 15px 20px;
+    border: 1px solid #eeeeee;
+}
+
+.pedido-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.pedido-id {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.pedido-fecha {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    color: #666666;
+}
+
+.pedido-estado {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 4px 10px;
+}
+
+.pedido-estado.pagado {
+    background-color: #e6f4ea;
+    color: #137333;
+}
+
+@media (max-width: 768px) {
+    .perfil-contenedor {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .perfil-usuario {
+        border-right: none;
+        border-bottom: 1px solid #eeeeee;
+        padding-right: 0;
+        padding-bottom: 30px;
+    }
+}

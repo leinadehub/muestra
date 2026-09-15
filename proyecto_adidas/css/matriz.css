@@ -1,0 +1,469 @@
+body {
+    background-color: #f3f3f7;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+main {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.mi-encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+img.wp {
+    width: 65px;
+    height: auto;
+    display: block;
+}
+
+.icono-movil {
+    display: none;
+}
+
+.navegacion-principal {
+    display: flex;
+    align-items: center;
+}
+
+.navegacion-principal a, .navegacion-principal span {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    transition: color 0.2s ease;
+    display: inline-block;
+}   
+
+.navegacion-principal a:hover {
+    color: #0071e3;
+}
+
+.navegacion-principal a.activo, 
+.navegacion-principal a.activo .menu-texto {
+    color: #8a8a8a !important;
+    font-weight: 700;
+}
+
+.banner-html {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.banner-imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.banner-contenido-html {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    text-align: left;
+    width: auto;
+    z-index: 10;
+}
+
+.btn-shop {
+    display: inline-block;
+    padding: 14px 35px;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 0px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-shop:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.productos-seccion {
+    padding: 60px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.titulo-productos {
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #111111;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+.productos-contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px 20px;
+    width: 100%;
+}
+
+.producto-tarjeta {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    background-color: #ffffff;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.3s ease;
+    width: 100%;
+}
+
+.producto-tarjeta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.producto-imagen-wrapper {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    height: auto;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+.producto-tarjeta img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.producto-tarjeta:hover img {
+    transform: scale(1.03);
+}
+
+.producto-info {
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.producto-tarjeta h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #111111;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    line-height: 1.4;
+}
+
+.producto-tarjeta .precio {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #000000;
+    font-size: 1.1rem;
+    display: block;
+    margin-top: auto;
+}
+
+.producto-tarjeta .precio s {
+    color: #888888;
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin-right: 8px;
+}
+
+.mi-footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    margin-top: 80px;
+    border-top: 1px solid #111111;
+    letter-spacing: 0.5px;
+    width: 100%;
+}
+
+.nota-academica {
+    font-size: 0.75rem;
+    color: #888888;
+    margin-top: 10px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.contacto-seccion {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: calc(100vh - 220px);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.contacto-contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    background-color: #ffffff;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contacto-formulario h2, .contacto-info h2 {
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.contacto-formulario p, .contacto-info p {
+    font-family: 'Inter', sans-serif;
+    color: #666666;
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.campo input, .campo textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #cccccc;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+}
+
+.campo input:focus, .campo textarea:focus {
+    outline: none;
+    border-color: #000000;
+}
+
+.btn-enviar {
+    display: inline-block;
+    width: 100%;
+    padding: 14px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #333333;
+}
+
+.info-bloque {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 15px;
+}
+
+.info-bloque h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+}
+
+.info-bloque p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .contacto-contenedor {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    /* Agregado: Bloquea definitivamente el desplazamiento lateral en celulares */
+    html, body {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    .mi-encabezado {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 10px 20px !important;
+        height: 70px !important; 
+        background-color: #ffffff !important;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05) !important;
+    }
+
+    img.wp {
+        width: 55px !important;
+        height: auto !important;
+        max-width: 55px !important;
+    }
+
+    nav, 
+    .mi-encabezado nav,
+    .navegacion-principal {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: flex-end !important;
+        gap: 20px !important;
+        width: auto !important;
+        height: auto !important;
+        background: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .navegacion-principal a {
+        margin: 0 !important;
+        padding: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: auto !important;
+        height: auto !important;
+        text-decoration: none !important;
+    }
+
+    .icono-movil {
+        display: block !important;
+        width: 24px !important;
+        height: auto !important;
+    }
+
+    .menu-texto,
+    .navegacion-principal span,
+    .navegacion-principal a span {
+        display: none !important;
+    }
+
+    .banner-html {
+        height: 30vh !important;
+    }
+
+    .banner-contenido-html {
+        left: 50% !important;
+        bottom: 15% !important;
+        transform: translateX(-50%) !important;
+        text-align: center !important;
+        width: 90% !important;
+    }
+
+    .btn-shop {
+        padding: 12px 28px !important;
+        font-size: 0.85rem !important;
+        width: 80% !important;
+    }
+
+    .productos-contenedor {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 15px !important;
+    }
+    
+    .titulo-productos {
+        font-size: 1.6rem !important;
+        margin-top: 40px !important;
+        margin-bottom: 25px !important;
+    }
+    
+    .productos-seccion {
+        padding: 0 15px !important;
+    }
+}
+
+.avatar-contenedor {
+    width: 200px !important;  /* <- Cambia este número para achicarlo o agrandarlo a tu gusto */
+    height: 130px !important; /* <- Ajusta este número para controlar el alto del recuadro */
+    background-color: transparent !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: hidden !important;
+    margin-bottom: 20px !important;
+}
+
+.avatar-foto {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+}
+
+.perfil-usuario {
+    margin-left: 70px !important; /* Empuja el logo y el nombre hacia la derecha */
+}
+
+.perfil-detalles {
+    padding-left: 70px !important; /* Empuja los datos de envío hacia la derecha */
+}
+
+
+
+.mi-encabezado {
+    padding: 0 40px !important;
+    height: 70px !important; /* Forzamos los 70px del index */
+}
+
+img.wp {
+    width: 65px !important; /* Achicamos el logo de Adidas */
+    height: auto !important;
+}
+

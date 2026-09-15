@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Mi Tienda Deportiva</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Barlow:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/matriz.css">
+</head>
+<body>
+
+   <header class="mi-encabezado">
+    <img class="wp" src="img/Logo_Adidas.png" alt="Adidas"> 
+    <nav class="navegacion-principal">
+        <a href="mi_tienda.html"><span class="menu-texto">Mi tienda</span></a>
+        <a href="index.html"><img src="img/icono_inicio.png" alt="Inicio" class="icono-movil"><span class="menu-texto"> Inicio</span></a>
+        <a href="catalogo.html"><img src="img/icono_categoria.png" alt="Catálogo" class="icono-movil"><span class="menu-texto"> Catálogo</span></a>
+        <a href="contacto.html" class="activo"><img src="img/icono_correo-electronico.png" alt="Contacto" class="icono-movil"><span class="menu-texto"> Contacto</span></a>
+        <a href="perfil.html"><img src="img/icono_perfil.png" alt="Perfil" class="icono-movil"><span class="menu-texto"> Perfil</span></a>
+    </nav>
+</header>
+    
+    <main class="contacto-seccion">
+        <div class="contacto-contenedor">
+            
+            <section class="contacto-formulario">
+                <h2>Envíanos un mensaje</h2>
+                
+                <p class="nota-simulacion">⚠️ <strong>Nota:</strong> Este formulario es una simulación visual académica. Los datos ingresados no se enviarán a ninguna base de datos real.</p>
+                
+                <p>Escríbenos si tienes dudas sobre tallas, pedidos o envíos.</p>
+                
+                <form action="#" method="POST">
+                    <div class="campo">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="correo">Correo Electrónico</label>
+                        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="asunto">Asunto</label>
+                        <input type="text" id="asunto" name="asunto" placeholder="¿En qué podemos ayudarte?" required>
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe tu consulta aquí..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+                </form>
+            </section>
+
+            <section class="contacto-info">
+                <h2>Canales de Atención</h2>
+                <p>Nuestro equipo de soporte académico responderá tu consulta lo antes posible.</p>
+                
+                <div class="info-bloque">
+                    <h3>📍 Dirección Simulada</h3>
+                    <p>Av. Universitaria 1234, Lima, Perú</p>
+                </div>
+
+                <div class="info-bloque">
+                    <h3>📞 Teléfono de Soporte</h3>
+                    <p>+51 999 888 777</p>
+                    <p>Lun a Vie: 9:00 AM - 6:00 PM</p>
+                </div>
+
+                <div class="info-bloque">
+                    <h3>✉️ Correo Institucional</h3>
+                    <p>soporte@mitiendadeportiva.edu.pe</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="mi-footer">
+        <p>&copy; 2026 Leinade. Todos los derechos reservados.</p>
+        <p class="nota-academica">Proyecto académico con fines educativos sin fines comerciales ni relación con la marca.</p>
+    </footer>
+
+</body>
+</html>
